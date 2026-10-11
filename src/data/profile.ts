@@ -13,13 +13,13 @@ export type LinkItem = {
 };
 
 export const profile: Profile = {
-  name: "홍길동",
-  bio: "한 줄 소개가 들어갈 자리입니다",
-  imageUrl: "/profile-placeholder.svg",
+  name: "배성웅",
+  bio: "SK 하이닉스 품질관리 엔지니어 | 요즘에는 AI 공부에 관심이 많아요",
+  imageUrl: "/profile.jpg",
 };
 
 export const links: LinkItem[] = [
-  { id: "instagram", title: "Instagram", url: "https://instagram.com" },
-  { id: "github", title: "GitHub", url: "https://github.com" },
-  { id: "blog", title: "블로그", url: "https://example.com" },
+  { id: "github", title: "🐙 깃허브", url: "https://github.com/kyosaladin-cmd" },
+  { id: "instagram", title: "📸 인스타그램", url: "https://www.instagram.com/bsu0404" },
+  { id: "email", title: "📧 이메일", url: "mailto:kyosaladin@naver.com" },
 ];

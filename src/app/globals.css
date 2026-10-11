@@ -3,14 +3,30 @@
 @tailwind utilities;
 
 :root {
-  --background: #f9fafb;
-  --foreground: #171717;
+  --background: #fbf3ea;
+  --foreground: #3b2f2a;
 }
 
 body {
+  min-height: 100vh;
   color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* 따뜻한 톤의 은은한 빛 번짐 위에 베이스 그라데이션 */
+  background:
+    radial-gradient(60rem 40rem at 10% -10%, rgba(255, 214, 186, 0.75), transparent 60%),
+    radial-gradient(50rem 36rem at 110% 20%, rgba(250, 196, 196, 0.55), transparent 60%),
+    radial-gradient(48rem 40rem at 50% 115%, rgba(255, 228, 176, 0.6), transparent 60%),
+    linear-gradient(180deg, #fdf7f0 0%, var(--background) 100%);
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    sans-serif;
+  word-break: keep-all;
 }
 
 @layer utilities {
